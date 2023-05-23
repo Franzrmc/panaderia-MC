@@ -60,7 +60,8 @@
 .productos__contenedor,
 .sercicios__contenedor,
 .horarios__contenedor,
-.preguntas__contenedor {
+.preguntas__contenedor,
+.footer__contenedor {
     width: 80em;
     max-width: 80em;
     margin: 5em auto 5em auto;
@@ -73,7 +74,8 @@
 
     .productos__contenedor,
     .sercicios__contenedor,
-    .horarios__contenedor {
+    .horarios__contenedor,
+    .footer__contenedor {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -865,4 +867,72 @@
         font-size: 1em;
     }
 
+}
+
+
+/*footer version escritorio*/
+
+.footer {
+    background-color: var(--color-secundario);
+    width: 100%;
+}
+
+
+.footer__seccion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__item {
+
+    margin-top: 2em;
+}
+
+.footer__item--titulo {
+    color: var(--color-Principal);
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.footer__item--contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__item--img {
+    width: 1.5rem;
+    margin-right: .5em;
+}
+
+.footer__item--link {
+    display: flex;
+    align-items: flex-end;
+    padding: .5em 0em;
+}
+
+.footer__item--descripcion,
+.footer__item--link {
+    color: var(--color-tema);
+    font-size: .9em;
+    font-weight: 300;
+}
+
+
+/*redes sociales footer*/
+
+.footer__social {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.footer__social--link {
+    display: flex;
+}
+
+.footer__socil--img {
+    width: 2.5em;
+    margin: 2em 3em;
 }
