@@ -1,0 +1,172 @@
+/*escritorio*/
+
+.header__openMenu,
+.header__closeMenu {
+    display: none;
+}
+
+.header {
+    background-color: var(--color-tema);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 3px 5px var(--color-sombra-navBar);
+}
+
+.header__container {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.nav {
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.nav__logo {
+    width: 16rem;
+}
+
+
+
+/*menu*/
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav__li {
+    padding: 0.8em;
+}
+
+.nav__link {
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-secundario);
+    transition: .5s;
+    position: relative;
+
+}
+
+.nav__link:hover {
+    padding: 0em .3em;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.nav__link::after {
+    content: "";
+    background-color: var(--color-Principal);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.nav__link.selected::after {
+    opacity: 1;
+}
+
+.nav__link:hover::after {
+    opacity: 0.8;
+}
+
+.social {
+    display: none;
+}
+
+
+/*mobile*/
+
+@media (max-width:950px) {
+
+    /*menu-mobile*/
+    .nav__logo {
+        width: 11rem;
+    }
+
+
+
+    .nav__menu {
+        z-index: 1;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        box-shadow: -5px 0px 10px var(--sombra-navBar);
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/imagen-nav-mobile.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        overflow-y: auto;
+        /*animacion nav*/
+        right: -110%;
+        transition: all .8s;
+
+
+    }
+
+    /*class  para abrir el menu con java script*/
+
+    .abrir-menu {
+        right: 0;
+    }
+
+    .nav__li {
+        padding: 1em 0em;
+    }
+
+    .nav__link {
+        color: var(--color-tema);
+        font-size: 1.2em;
+        font-weight: bolder;
+    }
+
+    .social {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12em 5em 0em 5em;
+    }
+
+    .social__img {
+        width: 3em;
+    }
+
+    /*botones*/
+    .header__openMenu,
+    .header__closeMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .header__closeMenu {
+        align-self: flex-end;
+        margin: 1em .6em;
+        cursor: pointer;
+
+    }
+
+    .header__logo {
+        width: 10rem;
+    }
+
+
+
+
+}

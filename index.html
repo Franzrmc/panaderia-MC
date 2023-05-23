@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="styles/main.css" />
+      <link rel="stylesheet" href="styles/navbar.css" />
+      <link rel="stylesheet" href="styles/contenido.css" />
+      <link rel="icon" href="assets/icono.png" />
+
+      <title>Panadería MC</title>
+   </head>
+   <body>
+      <header id="header" class="header">
+         <div class="header__container">
+            <nav class="nav">
+               <a href="index.html" class="nav__logo">
+                  <img
+                     class="nav__logo--img"
+                     src="assets/logotipo.png"
+                     alt="logotipo de la panaeria"
+                  />
+               </a>
+
+               <button class="header__openMenu" aria-label="Abrir menu">
+                  <img
+                     src="assets/menuAmburgesa.svg"
+                     alt="abrir menu"
+                     class="header__menuAmburguesa"
+                  />
+               </button>
+               <ul class="nav__menu">
+                  <button class="header__closeMenu" aria-label="Cerrar menu">
+                     <img
+                        src="assets/close.svg"
+                        alt="Cerrar menu"
+                        class="header__close"
+                     />
+                  </button>
+                  <li class="nav__li">
+                     <a
+                        id="navLink"
+                        href="index.html"
+                        class="nav__link selected"
+                        >inicio</a
+                     >
+                  </li>
+                  <li class="nav__li">
+                     <a href="#poduuctos" class="nav__link">Productos</a>
+                  </li>
+                  <li class="nav__li">
+                     <a href="#servicios" class="nav__link">servicios</a>
+                  </li>
+                  <li class="nav__li">
+                     <a href="#horarios" class="nav__link">Horarios</a>
+                  </li>
+                  <li class="nav__li">
+                     <a href="#Preguntas" class="nav__link">preguntas</a>
+                  </li>
+                  <div class="social">
+                     <a
+                        target="_blank"
+                        href="https:wa.me/59171040409?text=Hola Panadería MC,"
+                     >
+                        <img
+                           class="social__img"
+                           src="assets/whatsapp.svg"
+                           alt="icon whatsapp"
+                        />
+                     </a>
+
+                     <a
+                        target="_blank"
+                        href="https://www.facebook.com/mcpanaderia"
+                     >
+                        <img
+                           class="social__img"
+                           src="assets/facebok-icon.svg"
+                           alt="icon facebook"
+                        />
+                     </a>
+
+                     <a
+                        target="_blank"
+                        href="https://www.tiktok.com/@panaderiamc"
+                     >
+                        <img
+                           class="social__img"
+                           src="assets/tiktok.svg"
+                           alt="icon tiktok"
+                        />
+                     </a>
+                  </div>
+               </ul>
+            </nav>
+         </div>
+      </header>
+
+      <main>
+         <section class="cover">
+            <div class="cover__container">
+               <div class="cover__info">
+                  <h1 class="cover__titulo">Panadería MC</h1>
+                  <h2 class="cover__subtitulo">Pan casero</h2>
+                  <p class="cover__parrafo">
+                     Pan recién horneado en la puerta de tu hogar, disfruta el
+                     sabor de nuestra panadería desde la comodidad de tu casa
+
+                     <br />
+                     <br />
+
+                     <b class="cover__gratis"
+                        ><span class="comilla">"</span>Sin cargo adicional<span
+                           class="comilla"
+                           >"</span
+                        ></b
+                     >
+                  </p>
+               </div>
+               <div class="cover__vector">
+                  <img
+                     src="assets/delivery-guy-1424808_1280.png"
+                     alt=""
+                     class="cover__vecor--img"
+                  />
+               </div>
+            </div>
+            <div class="botones">
+               <a
+                  class="btn__pmc--email"
+                  href="mailto:mcpanaderia@gmial.com"
+                  target="_blank"
+               >
+                  <img
+                     class="btn__img"
+                     src="assets/emailbtn.svg"
+                     alt="icon whatsapp"
+                  />
+                  <p class="btn__parrafo">Correo</p>
+               </a>
+               <a
+                  class="btn__pmc--whatsapp"
+                  href="https:wa.me/0059171040409?text=Hola Panadería MC,"
+                  target="_blank"
+               >
+                  <img
+                     class="btn__img"
+                     src="assets/whatsapp.svg"
+                     alt="icon whatsapp"
+                  />
+                  <p class="btn__parrafo">whatsapp</p>
+               </a>
+               <a class="btn__pmc" href="telf:+59171040409" target="_blank">
+                  <img
+                     class="btn__img"
+                     src="assets/call.svg"
+                     alt="icon whatsapp"
+                  />
+                  <p class="btn__parrafo">Llamar Ahora</p>
+               </a>
+            </div>
+         </section>
+
+         <section class="productos">
+            <div class="productos__contenedor">
+               <h2 class="titulo">Nuestros Productos</h2>
+               <div class="pan">
+                  <div class="pan__casero">
+                     <h3 class="subtitulo">Pan Casero</h3>
+                     <p class="descripcion">
+                        "Delicioso pan casero recién horneado! Surtido de
+                        variedades por tan solo 0,50 centavos la unidad,
+                        disfruta de la calidad y el sabor de nuestro pan en
+                        todas sus variantes, descubre la frescura y el aroma de
+                        nuestro pan casero una opción económica y deliciosa para
+                        todos los gustos." <br />
+                        ¡No te quedes sin probarlos!
+                     </p>
+
+                     <div class="panCasero">
+                        <div class="panCasero__card">
+                           <img
+                              class="panCasero__card--image"
+                              src="/assets/PanBásico.jpg"
+                              alt="Pan integral"
+                           />
+                           <h2 class="panCasero__card--nombre">Pan Básico</h2>
+                           <p class="panCasero__card--descripcion">
+                              El pan de harina blanca de 50 gramos es un pan
+                              suave y esponjoso elaborado con harina blanca de
+                              alta calidad, manteca sal y azúcar. La levadura se
+                              utiliza para fermentar la masa y lograr la textura
+                              esponjosa. Este pan tiene un sabor dulce y salado
+                              equilibrado que lo hace perfecto para cualquier
+                              momento del día. Es una opción ideal para
+                              disfrutar como desayuno o como un bocadillo
+                              durante el día.
+                           </p>
+                        </div>
+                        <div class="panCasero__card">
+                           <img
+                              class="panCasero__card--image"
+                              src="/assets/panQeso.jpg"
+                              alt="Pan de centeno"
+                           />
+                           <h2 class="panCasero__card--nombre">
+                              Pan con Queso
+                           </h2>
+                           <p class="panCasero__card--descripcion">
+                              El pan de 50 gramos es una deliciosa opción para
+                              aquellos que buscan un bocado pequeño y
+                              satisfactorio. Elaborado con harina blanca de alta
+                              calidad, este pan tiene una textura suave y
+                              esponjosa que lo hace perfecto para cualquier
+                              momento del día. Además, su capa de queso chaqueño
+                              en la parte superior agrega un sabor irresistible
+                              y único que lo convierte en una opción aún más
+                              tentadora.
+                           </p>
+                        </div>
+                        <div class="panCasero__card">
+                           <img
+                              class="panCasero__card--image"
+                              src="/assets/panHarina.jpg"
+                              alt="Pan de molde"
+                           />
+                           <h2 class="panCasero__card--nombre">
+                              Pan con Harina
+                           </h2>
+                           <p class="panCasero__card--descripcion">
+                              El pan de 50 gramos con una capa de pasta harinosa
+                              y dulce en la parte superior es una deliciosa
+                              opción para aquellos que buscan un bocado dulce y
+                              satisfactorio. Elaborado con harina blanca de alta
+                              calidad, este pan tiene una textura suave y
+                              esponjosa que lo hace perfecto para cualquier
+                              momento del día. Su capa de pasta harinosa y dulce
+                              en la parte superior le da un toque crujiente y
+                              dulce que lo convierte en una opción aún más
+                              tentadora.
+                           </p>
+                        </div>
+                        <div class="panCasero__card">
+                           <img
+                              class="panCasero__card--image"
+                              src="https://via.placeholder.com/150"
+                              alt="Pan de campo"
+                           />
+                           <h2 class="panCasero__card--nombre">Pan de campo</h2>
+                           <p class="panCasero__card--descripcion">
+                              Pan elaborado con masa madre y semillas
+                           </p>
+                        </div>
+                     </div>
+
+                     <div id="myModal" class="modal">
+                        <div class="modal-content">
+                           <span class="modal-close">&times;</span>
+                           <img class="modal__imagen" src="" alt="" />
+                           <div class="nombre-descripcion">
+                              <h2 class="modal__titulo"></h2>
+                              <p class="modal__descripcion"></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="pan__dulce">
+                     <h3 class="subtitulo">Pan Dulce</h3>
+                     <div class="pan__imgDescripcion">
+                        <figure class="pan__content--img">
+                           <img
+                              class="pan__img"
+                              src="assets/panDulce.jpg"
+                              alt="pan dulce"
+                           />
+                        </figure>
+                        <p class="descripcion">
+                           ¡Celebra tus fiestas con nuestro delicioso pan dulce!
+                           <br />
+                           Nuestro pan dulce viene en diferentes formas, desde
+                           bollos suaves y esponjosos hasta trenzas dulces y
+                           crocantes, están cubiertos con una preparación
+                           líquida de huevo que les da un brillo dorado y un
+                           sabor dulce irresistible, perfecto para cualquier
+                           celebración.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--
+         <section class="servicios">
+            <h2 class="titulo">Nuestros Servicios</h2>
+            <div class="sercicios__contenedor">
+               <article class="servicio">
+                  <div class="subtitulo">Entrega a Domicilio</div>
+                  <div class="servicio__descripcion">
+                     <div class="descripcion">
+                        Ofrecemos un conveniente servicio de entrega a
+                        domicilio, disfruta de nuestros deliciosos panes y sin
+                        salir de casa. <br />
+                        Nuestro equipo de entrega profesional te garantiza un
+                        servicio puntual y cordial, haz tu pedido y déjate
+                        sorprender con los sabores únicos de nuestra panadería
+                        en la comodidad de tu hogar.
+                     </div>
+                     <div class="servicio__visual">
+                        <img src="/assets/deliveryHomme.png" alt="" />
+                     </div>
+                  </div>
+               </article>
+               <article class="servicio">
+                  <div class="subtitulo">Zona de Reparto</div>
+                  <div class="servicio__descripcion">
+                     <div class="servicio__visual--invertido">
+                        <iframe
+                           class="servicio__mapa"
+                           src="https://www.google.com/maps/d/embed?mid=1KdUd9gIgRRbJ_2iWoW2T0TBP9WTgYoA&ehbc=2E312F"
+                        ></iframe>
+                     </div>
+
+                     <div class="servicio__parrafo">
+                        Nuestro servicio de entrega a domicilio de pan tiene una
+                        distancia máxima de reparto de 4 kilómetros. <br />
+                        Queremos asegurarnos de llegar a nuestros clientes más
+                        cercanos con pan fresco. <br />
+                        Puedes consultar nuestro mapa interactivo para ver el
+                        radio de acción y confirmar si te encuentras dentro de
+                        nuestra área de entrega
+                     </div>
+                  </div>
+               </article>
+            </div>
+         </section>
+         -->
+
+         <section class="horarios">
+            <div class="horarios__contenedor">
+               <h2 class="titulo">Horarios</h2>
+               <h3 class="subtitulo subtitulo__center">Horarios de atencíon</h3>
+               <p class="descripcion">
+                  En nuestra panadería, nos esforzamos por brindarte la mejor
+                  experiencia posible, nuestros horarios de apertura y cierre
+                  están diseñados para garantizar que siempre disfrutes de
+                  productos horneados con amor y dedicación. <br />
+                  ¡Esperamos verte pronto en nuestra panadería.
+               </p>
+               <ul class="horarios__lista">
+                  <li class="horarios__item">
+                     <span class="horarios__dia">Lunes - viernes</span>
+                     <span class="horarios__hora">08:00 - 20:00 </span>
+                     <span class="horarios__reaparto"
+                        >Reparto a domicilio: 17:00 - 20:00</span
+                     >
+                  </li>
+                  <li class="horarios__item">
+                     <span class="horarios__dia">Sabados</span>
+                     <span class="horarios__hora"> 09:00 - 14:00</span>
+                     <span class="horarios__reaparto"
+                        >Reparto a domicilio disponible</span
+                     >
+                  </li>
+                  <li class="horarios__item">
+                     <span class="horarios__dia">Domingo</span>
+                     <span class="horarios__hora">Cerrado</span>
+                  </li>
+                  <li class="horarios__item">
+                     <span class="horarios__dia"></span>
+                     <span class="horarios__reaparto"
+                        >Realizar pedidos dentro de las horas
+                        establecidas!!!</span
+                     >
+                  </li>
+               </ul>
+            </div>
+         </section>
+
+         <section class="preguntas">
+            <div class="preguntas__contenedor">
+               <h2 class="titulo">Preguntas Frecuentes</h2>
+               <div class="preguntas__faq">
+                  <h3 class="preguntas__faq--titulo">
+                     ¿Cuáles son los métodos de pago aceptados?
+                  </h3>
+                  <p class="preguntas__faq--respuesta">
+                     - sólo se aceptan pagos en efectivo
+                  </p>
+               </div>
+
+               <div class="preguntas__faq">
+                  <h3 class="preguntas__faq--titulo">
+                     ¿Realizan pedidos especiales?
+                  </h3>
+                  <p class="preguntas__faq--respuesta">
+                     - Sí, estamos encantados de crear pedidos personalizados
+                     para eventos de momento realizamos la elavoración de pan
+                     dulce. Por favor, contáctenos con anticipación para
+                     discutir los detalles de su pedido.
+                  </p>
+               </div>
+
+               <div class="preguntas__faq">
+                  <h3 class="preguntas__faq--titulo">
+                     ¿Hacen entregas a domicilio?
+                  </h3>
+                  <p class="preguntas__faq--respuesta">
+                     - Sí, ofrecemos servicio de entrega a domicilio dentro de
+                     nuestra área de cobertura. Puedes realizar tu pedido por
+                     teléfono o a través de nuestra página web y coordinaremos
+                     la entrega en la dirección indicada.
+                  </p>
+               </div>
+
+               <div class="preguntas__faq">
+                  <h3 class="preguntas__faq--titulo">
+                     ¿Hacen entrega fuera de la zona delimitada?
+                  </h3>
+                  <p class="preguntas__faq--respuesta">
+                     - Lamentablemente, actualmente solo ofrecemos entregas
+                     dentro de nuestra área de cobertura delimitada. Nos
+                     esforzamos por garantizar que nuestros productos lleguen
+                     frescos y en las mejores condiciones a nuestros clientes, y
+                     por eso hemos establecido una zona de entrega específica
+                     para poder mantener la calidad de nuestros servicios.
+                     <br />
+                     Agradecemos tu comprensión y esperamos poder satisfacer tus
+                     necesidades en el futuro. Si tienes alguna otra pregunta o
+                     inquietud, no dudes en comunicarte con nosotros.
+                  </p>
+               </div>
+            </div>
+         </section>
+
+         <footer class="footer"></footer>
+      </main>
+
+      <script defer src="/js/pmc.js"></script>
+   </body>
+</html>
