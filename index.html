@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <script defer src="/js/pmc.js"></script>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -45,15 +46,12 @@
                      />
                   </button>
                   <li class="nav__li">
-                     <a
-                        id="navLink"
-                        href="index.html"
-                        class="nav__link selected"
+                     <a id="navLink" href="#inicio" class="nav__link selected"
                         >inicio</a
                      >
                   </li>
                   <li class="nav__li">
-                     <a href="#poduuctos" class="nav__link">Productos</a>
+                     <a href="#productos" class="nav__link">Productos</a>
                   </li>
                   <li class="nav__li">
                      <a href="#servicios" class="nav__link">servicios</a>
@@ -62,7 +60,7 @@
                      <a href="#horarios" class="nav__link">Horarios</a>
                   </li>
                   <li class="nav__li">
-                     <a href="#Preguntas" class="nav__link">preguntas</a>
+                     <a href="#preguntas" class="nav__link">preguntas</a>
                   </li>
                   <div class="social">
                      <a
@@ -78,7 +76,7 @@
 
                      <a
                         target="_blank"
-                        href="https://www.facebook.com/mcpanaderia"
+                        href="https://www.facebook.com/PanaderiaaMC"
                      >
                         <img
                            class="social__img"
@@ -104,7 +102,7 @@
       </header>
 
       <main>
-         <section class="cover">
+         <section class="cover" id="inicio">
             <div class="cover__container">
                <div class="cover__info">
                   <h1 class="cover__titulo">Panadería MC</h1>
@@ -168,7 +166,7 @@
             </div>
          </section>
 
-         <section class="productos">
+         <section class="productos" id="productos">
             <div class="productos__contenedor">
                <h2 class="titulo">Nuestros Productos</h2>
                <div class="pan">
@@ -298,13 +296,12 @@
             </div>
          </section>
 
-         <!--
-         <section class="servicios">
+         <section class="servicios" id="servicios">
             <h2 class="titulo">Nuestros Servicios</h2>
             <div class="sercicios__contenedor">
                <article class="servicio">
-                  <div class="subtitulo">Entrega a Domicilio</div>
                   <div class="servicio__descripcion">
+                     <div class="subtitulo">Entrega a Domicilio</div>
                      <div class="descripcion">
                         Ofrecemos un conveniente servicio de entrega a
                         domicilio, disfruta de nuestros deliciosos panes y sin
@@ -314,14 +311,14 @@
                         sorprender con los sabores únicos de nuestra panadería
                         en la comodidad de tu hogar.
                      </div>
-                     <div class="servicio__visual">
-                        <img src="/assets/deliveryHomme.png" alt="" />
-                     </div>
+                  </div>
+                  <div class="servicio__visual">
+                     <img src="/assets/deliveryHomme.png" alt="" />
                   </div>
                </article>
-               <article class="servicio">
+               <article class="servicio--inverttido">
                   <div class="subtitulo">Zona de Reparto</div>
-                  <div class="servicio__descripcion">
+                  <div class="servicio__descripcion--invertido">
                      <div class="servicio__visual--invertido">
                         <iframe
                            class="servicio__mapa"
@@ -342,9 +339,8 @@
                </article>
             </div>
          </section>
-         -->
 
-         <section class="horarios">
+         <section class="horarios" id="horarios">
             <div class="horarios__contenedor">
                <h2 class="titulo">Horarios</h2>
                <h3 class="subtitulo subtitulo__center">Horarios de atencíon</h3>
@@ -385,7 +381,7 @@
             </div>
          </section>
 
-         <section class="preguntas">
+         <section class="preguntas" id="preguntas">
             <div class="preguntas__contenedor">
                <h2 class="titulo">Preguntas Frecuentes</h2>
                <div class="preguntas__faq">
@@ -440,89 +436,121 @@
                </div>
             </div>
          </section>
+      </main>
 
-         <footer class="footer">
-            <div class="footer__contenedor">
-               <div class="footer__seccion">
-                  <div class="footer__item">
-                     <h3 class="footer__item--titulo">Ubicacion</h3>
+      <footer class="footer">
+         <div class="footer__contenedor">
+            <div class="footer__seccion">
+               <div class="footer__item">
+                  <h3 class="footer__item--titulo">Ubicacion</h3>
 
-                     <a href="mailto:mcpanaderia@gmial.com" target="_blank">
-                        <div class="footer__item--link">
-                           <img
-                              src="/assets/img_ubicacion.svg"
-                              class="footer__item--img"
-                           />
+                  <a
+                     href="https://www.google.com/maps/place/Panader%C3%ADa+MC/@-20.0083915,-63.1863793,16z/data=!4m6!3m5!1s0x93f66b39785cec57:0x6b0c63d5230ec23!8m2!3d-20.0093418!4d-63.1843525!16s%2Fg%2F11s_x08dp3"
+                     target="_blank"
+                  >
+                     <div class="footer__item--link">
+                        <img
+                           src="/assets/img_ubicacion.svg"
+                           class="footer__item--img"
+                        />
 
-                           <p class="footer__item--descripcion">
-                              San Antonio del Parapety - Estacion
-                           </p>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="footer__item">
-                     <h3 class="footer__item--titulo">Informacion</h3>
-                     <div class="footer__item--contenido">
-                        <p class="footer__item--descripcion">Inicio</p>
-                        <p class="footer__item--descripcion">Productos</p>
-                        <p class="footer__item--descripcion">Sercicios</p>
-                        <p class="footer__item--descripcion">Horarios</p>
-                        <p class="footer__item--descripcion">Preguntas</p>
+                        <p class="footer__item--descripcion">
+                           San Antonio del Parapety - Estacion
+                        </p>
                      </div>
-                  </div>
-                  <div class="footer__item">
-                     <h3 class="footer__item--titulo">Contactanos</h3>
-
-                     <a href="mailto:mcpanaderia@gmial.com" target="_blank">
-                        <div class="footer__item--link">
-                           <img
-                              src="/assets/emailbtn.svg"
-                              alt=""
-                              class="footer__item--img"
-                           />
-
-                           <p class="footer__item--descripcion">
-                              panaderiamc@gmail.com
-                           </p>
-                        </div>
+                  </a>
+               </div>
+               <div class="footer__item">
+                  <h3 class="footer__item--titulo">Informacion</h3>
+                  <div class="footer__item--contenido">
+                     <a href="#inicio" id="inicio">
+                        <p class="footer__item--descripcion">Inicio</p>
                      </a>
-
-                     <a href="telf:59171040409" target="_blank">
-                        <div class="footer__item--link">
-                           <img
-                              src="/assets/call.svg"
-                              alt=""
-                              class="footer__item--img"
-                           />
-
-                           <p class="footer__item--descripcion">71040409</p>
-                        </div>
+                     <a href="#productos" id="productos">
+                        <p class="footer__item--descripcion">Productos</p>
+                     </a>
+                     <a href="#servicios" id="servicios">
+                        <p class="footer__item--descripcion">Sercicios</p>
+                     </a>
+                     <a href="#horarios" id="horarios">
+                        <p class="footer__item--descripcion">Horarios</p>
+                     </a>
+                     <a href="#preguntas" id="preguntas">
+                        <p class="footer__item--descripcion">Preguntas</p>
                      </a>
                   </div>
                </div>
-               <div class="footer__social">
-                  <div class="footer__social--link">
+               <div class="footer__item">
+                  <h3 class="footer__item--titulo">Contactanos</h3>
+
+                  <a href="mailto:mcpanaderia@gmial.com" target="_blank">
+                     <div class="footer__item--link">
+                        <img
+                           src="/assets/emailbtn.svg"
+                           alt=""
+                           class="footer__item--img"
+                        />
+
+                        <p class="footer__item--descripcion">
+                           panaderiamc@gmail.com
+                        </p>
+                     </div>
+                  </a>
+
+                  <a href="telf:59171040409" target="_blank">
+                     <div class="footer__item--link">
+                        <img
+                           src="/assets/call.svg"
+                           alt=""
+                           class="footer__item--img"
+                        />
+
+                        <p class="footer__item--descripcion">71040409</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="footer__social">
+               <div class="footer__social--link">
+                  <a
+                     class="footer__link"
+                     href="https://www.facebook.com/PanaderiaaMC"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
                      <img
                         src="assets/facebok-icon.svg"
                         alt=""
                         class="footer__social--img"
                      />
+                  </a>
+
+                  <a
+                     href="https://www.tiktok.com/@panaderiamc"
+                     class="footer__link"
+                     target="_blank"
+                  >
                      <img
                         src="assets/tiktok.svg"
                         alt=""
                         class="footer__social--img"
                      />
+                  </a>
+
+                  <a
+                     class="footer__link"
+                     href="https:wa.me/0059171040409?text=Hola Panadería MC,"
+                     target="_blank"
+                  >
                      <img
                         src="assets/whatsapp.svg"
                         alt=""
                         class="footer__social--img"
                      />
-                  </div>
+                  </a>
                </div>
             </div>
-         </footer>
-      </main>
-
-      <script defer src="/js/pmc.js"></script>
+         </div>
+      </footer>
    </body>
 </html>

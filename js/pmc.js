@@ -13,6 +13,38 @@ closeMenuBtn.addEventListener("click", togglemenu);
 //
 //
 //
+/*habilitamos la navegacion en el menu de dispositivos mobiles*/
+
+const menuLinks = document.querySelectorAll('.nav__menu a[href^="#"]');
+//intersector
+const observer = new IntersectionObserver(
+   (entries) => {
+      entries.forEach((entry) => {
+         const id = entry.target.getAttribute("id");
+         const menuLink = document.querySelector(`.nav__menu a[href="#${id}"]`);
+
+         if (entry.isIntersecting) {
+            document
+               .querySelector(".nav__menu a.selected")
+               .classList.remove("selected");
+            menuLink.classList.add("selected");
+         }
+      });
+   },
+   { rootMargin: "-30% 0px -70% 0px" }
+);
+menuLinks.forEach((menuLink) => {
+   menuLink.addEventListener("click", function () {
+      menu.classList.remove("abrir-menu");
+   });
+
+   const hash = menuLink.getAttribute("href");
+   const target = document.querySelector(hash);
+
+   if (target) {
+      observer.observe(target);
+   }
+});
 
 //seccrion de produuctos (pan casero)
 // Obtener los elementos de la ventana modal

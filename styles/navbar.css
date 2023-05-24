@@ -75,11 +75,11 @@
 }
 
 .nav__link.selected::after {
-    opacity: 1;
+    opacity: .6;
 }
 
 .nav__link:hover::after {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .social {
@@ -95,8 +95,6 @@
     .nav__logo {
         width: 11rem;
     }
-
-
 
     .nav__menu {
         z-index: 1;
@@ -165,8 +163,5 @@
     .header__logo {
         width: 10rem;
     }
-
-
-
 
 }

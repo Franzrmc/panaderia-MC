@@ -208,3 +208,7 @@ body {
    /* opcional */
    -moz-osx-font-smoothing: grayscale;
 }
+
+section[id] {
+   scroll-margin-top: 90px;
+}
