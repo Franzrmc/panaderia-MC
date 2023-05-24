@@ -936,3 +936,61 @@
     width: 2.5em;
     margin: 2em 3em;
 }
+
+/*footer version mobile*/
+
+@media (max-width:900px) {
+    .footer__seccion {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .footer__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1em 0em;
+
+    }
+
+    .footer__item--img {
+        margin: .5em .3em;
+    }
+
+    .footer__item--titulo {
+        margin-bottom: 0em;
+    }
+
+    .footer__item--descripcion {
+        text-align: center;
+        padding: .5em;
+
+
+    }
+
+    .footer__item--link {
+        padding: 1em;
+    }
+
+    .footer__social {
+        justify-content: space-around;
+
+
+
+    }
+
+    .footer__social--link {
+        width: 60%;
+        justify-content: space-between;
+
+
+    }
+
+    .footer__social--img {
+        width: 2.5em;
+        margin: 1.5em 0em;
+
+    }
+}
