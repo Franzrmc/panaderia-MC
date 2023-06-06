@@ -42,11 +42,15 @@
 /*version mobile de titulo - subtitulo - descripcion*/
 @media (max-width:900px) {
     .titulo {
-        font-size: 1.8em;
+        font-size: 1.5em;
+        margin-bottom: 0em;
+
     }
 
     .subtitulo {
         text-align: center;
+        padding: 0;
+        margin-top: .5em;
     }
 
     .descripcion {
@@ -99,7 +103,7 @@
 }
 
 .cover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/imagenHero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/assets/imagenHero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -118,7 +122,8 @@
     padding: 1em 1em;
     max-width: 80em;
     width: 100%;
-    margin: 0em auto;
+    margin: 1.5em auto 0em auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -169,7 +174,7 @@
 .botones {
 
     max-width: 80em;
-    height: calc(100vh - 85vh);
+    height: calc(100vh - 88vh);
     margin: 0em auto 5em auto;
     display: flex;
     justify-content: space-around;
@@ -190,8 +195,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
-    border-radius: 15em;
+    padding: .5em;
+    border-radius: 10px;
     font-size: 1em;
     color: var(--color-tema);
     background-color: var(--color-secundario);
