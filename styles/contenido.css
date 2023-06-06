@@ -443,7 +443,7 @@
     .panCasero {
         grid-template-columns: repeat(1, 1fr);
         padding: 0em;
-        width: 90%;
+        width: 95%;
     }
 
     .panCasero__card {
